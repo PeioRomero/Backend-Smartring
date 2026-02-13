@@ -435,11 +435,11 @@ def health_check():
     """Health check endpoint"""
     return jsonify({'status': 'ok', 'message': 'Server is running'})
 
+# Initialize database when app starts (works with Gunicorn)
+init_db()
+
 if __name__ == '__main__':
-    # Initialize database
-    init_db()
-    
-    # Run server
+    # Run server locally
     print("Starting Dropshipping Backend Server...")
     print("Supplier email:", SUPPLIER_EMAIL)
     print("Stripe configured")
