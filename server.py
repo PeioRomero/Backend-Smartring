@@ -112,7 +112,7 @@ def send_customer_confirmation(order_data):
                 <p><strong>Producto:</strong> SmartRing Pro</p>
                 <p><strong>Talla:</strong> {order_data['ring_size']}</p>
                 <p><strong>Color:</strong> {order_data['ring_color']}</p>
-                <p><strong>Total:</strong> €25.00</p>
+                <p><strong>Total:</strong> €29.99</p>
             </div>
             
             <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
